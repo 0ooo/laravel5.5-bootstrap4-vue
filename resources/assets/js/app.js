@@ -9,7 +9,9 @@ require('./bootstrap');
 
 window.Vue = require('vue');
 import BootstrapVue from 'bootstrap-vue'
+import Toaster from 'v-toaster'
 Vue.use(BootstrapVue);
+Vue.use(Toaster, {timeout: 5000})
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
